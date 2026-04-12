@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mermaid Viewer</title>
+  <link rel="stylesheet" type="text/css" href="/ui/external-actions/style/alm-octane-style.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h2>Mermaid Viewer</h2>
+      <p class="subtitle">Render Mermaid diagram from feature field <strong>mermaid_udf</strong>.</p>
+    </header>
+
+    <div id="status" class="status">Loading...</div>
+
+    <div id="selector-wrap" class="selector-wrap hidden">
+      <label for="feature-select">Feature</label>
+      <select id="feature-select"></select>
+    </div>
+
+    <div id="meta" class="meta hidden"></div>
+
+    <div id="diagram-wrap" class="diagram-wrap hidden">
+      <div class="zoom-controls">
+        <button id="zoom-out" title="Zoom out">−</button>
+        <button id="zoom-reset" title="Reset zoom">100%</button>
+        <button id="zoom-in" title="Zoom in">+</button>
+      </div>
+      <div id="diagram" class="diagram"></div>
+    </div>
+
+    <div id="empty" class="empty hidden"></div>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "mermaid": "https://cdn.jsdelivr.net/npm/mermaid@11.14.0/dist/mermaid.esm.min.mjs"
+    },
+    "integrity": {
+      "https://cdn.jsdelivr.net/npm/mermaid@11.14.0/dist/mermaid.esm.min.mjs": "sha384-QKnqrMjp4QCSqR5R2H+rXW8780iTNp7Y3mwQOMdlAZhMePrlb/UxZJYF+Mqf+kUw"
+    }
+  }
+  </script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
