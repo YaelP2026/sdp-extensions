@@ -1,0 +1,11 @@
+{
+  "name": "entity-label-updater",
+  "title": "Update Field Label",
+  "entity_type": ["entity_label"],
+  "views": ["list"],
+  "icon": "edit",
+  "url": "{bundle_url}/entity-label-updater/index.html?shared_space={shared_space}&workspace={workspace}&dialog_id={dialog_id}&octane_url={octane_url}&xsrf_token={xsrf_token}&v=20260412-6",
+  "single_entity": null,
+  "dialog": "large",
+  "events": true
+}

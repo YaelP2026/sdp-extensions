@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Field Label</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="container">
+    <p id="workspace-warning" class="warning hidden"></p>
+
+    <section class="form-grid">
+      <label>Entity type</label>
+      <div id="entity-combo"></div>
+
+      <label>Field</label>
+      <div id="field-combo"></div>
+
+      <label for="label-input">New label</label>
+      <input id="label-input" type="text" maxlength="255" placeholder="Enter field label" />
+
+      <label for="description-input">New description</label>
+      <textarea id="description-input" rows="1" maxlength="2000" placeholder="Enter field description"></textarea>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <footer class="actions">
+      <button id="save-button" type="button" disabled>Update label</button>
+      <button id="close-button" type="button" class="secondary">Close</button>
+    </footer>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
