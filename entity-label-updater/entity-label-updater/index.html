@@ -17,11 +17,11 @@
       <label>Field</label>
       <div id="field-combo"></div>
 
-      <label for="label-input">New label</label>
-      <input id="label-input" type="text" maxlength="255" placeholder="Enter field label" />
+      <label for="label-input">New label <span class="required-mark" aria-hidden="true">*</span></label>
+      <input id="label-input" type="text" maxlength="255" placeholder="Enter field label" required />
 
-      <label for="description-input">New description</label>
-      <textarea id="description-input" rows="4" maxlength="2000" placeholder="Enter field description"></textarea>
+      <label for="description-input">New description <span class="required-mark" aria-hidden="true">*</span></label>
+      <textarea id="description-input" rows="4" maxlength="2000" placeholder="Enter field description" required></textarea>
     </section>
 
     <p id="status" class="status" role="status" aria-live="polite"></p>

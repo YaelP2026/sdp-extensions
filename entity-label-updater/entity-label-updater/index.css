@@ -173,6 +173,10 @@ label {
   font-size: 0.78rem;
 }
 
+.required-mark {
+  color: var(--danger);
+}
+
 select,
 input,
 textarea {

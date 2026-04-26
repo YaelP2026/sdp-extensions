@@ -167,7 +167,8 @@
       !state.isBusy &&
       Boolean(entityCombo && entityCombo.getValue()) &&
       Boolean(fieldCombo && fieldCombo.getValue()) &&
-      ui.labelInput.value.trim().length > 0;
+      ui.labelInput.value.trim().length > 0 &&
+      ui.descriptionInput.value.trim().length > 0;
     ui.saveButton.disabled = !canSave;
   }
 
@@ -475,8 +476,8 @@
     const fields = state.fieldsByEntity.get(entityName) || [];
     const selectedField = fields.find((f) => f.metadataId === fieldId);
 
-    if (!entityName || !selectedField || !newLabel) {
-      setStatus('Please select entity and field, then provide a label.', 'error');
+    if (!entityName || !selectedField || !newLabel || !newDescription) {
+      setStatus('Please select entity and field, then provide a label and description.', 'error');
       return;
     }
 
